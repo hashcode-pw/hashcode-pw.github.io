@@ -1,0 +1,92 @@
+// Global Foundation Settings
+@import "settings";
+//@import "foundation";
+@import "foundation/foundation-global";
+@import "foundation/components/grid";
+@import "foundation/components/type";
+@import "foundation/components/orbit";
+
+body {
+    #page-home {
+        #title {
+            background: url(/assets/img/subtle_carbon.png);
+            text-align: center;
+            h1 {
+                color: #f5f5f5;
+            }
+        }
+        #banner {
+            .orbit-container {
+                background: #2792AD;
+                text-align: center;
+                text-transform: uppercase;
+                h1, small, h2, h3, h4  {
+                    color: #f5f5f5;
+                }
+                li {
+                    padding: 60px;
+                }
+            }
+            .orbit-bullets {
+                display: none !important;
+            }
+            .orbit-slide-number {
+                display:none;
+            }
+        }
+        .rightleft {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #bbb;
+            .leftpart {
+                text-transform: uppercase;
+                h1,h2,h3,h4 {
+                    font-size: emCalc(24px);
+                    font-weight: normal;
+                }
+            }
+            .rightpart {
+                padding-top: 12px;
+            }
+        }
+        #whatis {
+            .question {
+            }
+            .answer {
+                padding-top: 12px;
+            }
+        }
+        #apply {
+            background: #FFA500;
+            margin-top: emCalc(24px);
+            h1, h2, h3 {
+            }
+            .rightleft {
+                border: none !important;
+                a {
+                    color: #111 !important;
+                    font-style: italic;
+                }
+            }
+        }
+        #companies {
+            .company {
+                margin-bottom: 36px;
+                border-bottom: 1px solid #ccc;
+            }
+            blockquote, blockquote p  {
+                font-family: "Gentium Basic", Georgia, serif;
+                font-size: emCalc(18px);
+                font-style: italic;
+                color: #111;
+                border: none;
+            }
+        }
+    }
+    footer {
+        color: #f5f5f5;
+        background: url(/assets/img/subtle_carbon.png);
+        margin-top: 48px !important;
+        border-top: 1px solid #bbb;
+        padding: 24px;
+    }
+}
